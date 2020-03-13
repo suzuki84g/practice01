@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+body h1{
+    font-size: large;
+}
+body p {
+    color: red;
+}
+* {
+    padding: 30px;
+    margin: 30px;
+}
