@@ -1,11 +1,9 @@
 @charset "UTF-8";
 
-/* all */
 * {
     box-sizing: border-box;
 }
 
-/* body */
 body {
     line-height: 1.7;
     font-size: 16px;
@@ -15,6 +13,10 @@ body {
 /* header */
 header {
     display: flex;
+}
+header .logo {
+    background-color: #C0C0C0;
+    border-radius: 50%;
 }
 header nav ul {
     list-style-type: none;
