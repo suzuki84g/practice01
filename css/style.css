@@ -9,6 +9,12 @@ body {
     font-size: 16px;
     font-family: 'M PLUS 1p', sans-serif;
 }
+body section {
+    margin: 30px 0px;
+}
+body h1 {
+    text-align: center;
+}
 body li:hover {
     text-decoration: underline;
 }
@@ -32,7 +38,13 @@ footer {
     color: #fffaf0;
 }
 footer p {
+    text-align: center;
+    padding-top: 20px;
     margin-bottom: 0px;
 }
 
 /* main */
+.inner {
+    width: 80%;
+    margin: 0 auto;
+}
