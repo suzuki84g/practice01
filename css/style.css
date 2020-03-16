@@ -27,5 +27,12 @@ header nav ul {
 }
 
 /* footer */
+footer {
+    background-color: #000;
+    color: #fffaf0;
+}
+footer p {
+    margin-bottom: 0px;
+}
 
 /* main */
