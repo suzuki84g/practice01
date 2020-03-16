@@ -15,6 +15,9 @@ body section {
 body h1 {
     text-align: center;
 }
+body p {
+    margin: 12px 0px;
+}
 body li:hover {
     text-decoration: underline;
 }
