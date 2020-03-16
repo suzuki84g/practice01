@@ -52,6 +52,7 @@ footer p {
     margin: 0 auto;
 }
 table {
+    border: solid 2px #000;
     background-color: #f0f0f0;
     width: 100%;
     margin: auto;
@@ -59,8 +60,8 @@ table {
     text-align: left;
     /* #TODO: 枠線 */
     /* #TODO: 罫線 */
-    /* #TODO: 横幅を`2:1`にする */
-    /* #TODO: thead部分の上下余白を大きくする */
+    /* #TODO: 横幅を`2:1`にする table-layoutを使えば良さそう */
+    /* #TODO: thead部分の上下余白を大きくする border-spacing */
 }
 table thead,
 table tbody tr th {
