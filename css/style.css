@@ -69,7 +69,7 @@ table tbody tr th {
 table thead {
     font-size: large;
 }
-table thead tr th {
+table thead [scope="row"] {
     color: orange;
 }
 table tbody tr th {
