@@ -49,6 +49,26 @@ footer p {
     margin: 0 auto;
 }
 table {
+    background-color: #f0f0f0;
     width: 100%;
     margin: auto;
+    border-collapse: collapse;
+    text-align: left;
+    /* #TODO: 枠線 */
+    /* #TODO: 罫線 */
+    /* #TODO: 横幅を`2:1`にする */
+    /* #TODO: thead部分の上下余白を大きくする */
+}
+table thead,
+table tbody tr th {
+    font-weight: bold;
+}
+table thead {
+    font-size: large;
+}
+table thead tr th {
+    color: orange;
+}
+table tbody tr th {
+    color: gray;
 }
