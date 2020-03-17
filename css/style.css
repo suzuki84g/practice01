@@ -60,7 +60,6 @@ table {
     width: 100%;
     margin: auto;
     text-align: left;
-    /* #TODO: thead部分の上下余白を大きくする border-spacing */
 }
 table thead,
 table tbody tr th {
