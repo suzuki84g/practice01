@@ -60,7 +60,6 @@ table {
     width: 100%;
     margin: auto;
     text-align: left;
-    /* #TODO: 横幅を`2:1`にする table-layoutを使えば良さそう */
     /* #TODO: thead部分の上下余白を大きくする border-spacing */
 }
 table thead,
