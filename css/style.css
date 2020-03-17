@@ -53,14 +53,13 @@ footer p {
     margin: 0 auto;
 }
 table {
-    border: solid 2px #000;
+    border: solid 2px #a9a9a9;  /* 枠線 */
+    border-radius: 5px / 5px;  /* 外枠を丸くする */
+    border-spacing: 6px;  /* セル同士の余白を発生させる */
     background-color: #f0f0f0;
     width: 100%;
     margin: auto;
     text-align: left;
-    border-spacing: 6px;
-    /* #TODO: 枠線 */
-    /* #TODO: 罫線 */
     /* #TODO: 横幅を`2:1`にする table-layoutを使えば良さそう */
     /* #TODO: thead部分の上下余白を大きくする border-spacing */
 }
@@ -73,6 +72,10 @@ table thead {
 }
 table thead [scope="row"] {
     color: orange;
+}
+table tbody td,
+table tbody th {
+    border-bottom: dotted 2px #a9a9a9;  /* セルの下だけ線を引く */
 }
 table tbody tr th {
     color: gray;
