@@ -9,13 +9,14 @@ body {
     font-family: 'M PLUS 1p', sans-serif;
 }
 body section {
-    margin: 60px 0px;
+    margin: 80px 0px;
 }
 body h1 {  /* fontサイズと行間を調整したい */
     text-align: center;
 }
-body p {
-    margin: 12px 0px;
+body p,
+body h1 {
+    margin: 5px 0px;
 }
 body li:hover {
     text-decoration: underline;
@@ -27,7 +28,7 @@ header {
     justify-content: center;  /* 子要素を中央寄せ */
 }
 header .header-box {
-    width: 40%;  /* 40％の箱が2つで20％が余白に割り当てられる */
+    width: 35%;  /* 40％の箱が2つで20％が余白に割り当てられる */
     margin: 20px 0px;
     /* border: solid 1px;  余白検証用 */
 }
@@ -72,7 +73,7 @@ footer p {
 
 /* main */
 .inner {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 table {
