@@ -110,7 +110,9 @@ table tbody tr th {
 
 /* form */
 .form h1 {
-    /* 縦幅 */
+    font-size: 1.5em;
+    margin: 0px;
+    line-height: 1;
 }
 .form .inner {}
 .form form {
