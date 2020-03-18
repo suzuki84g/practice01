@@ -3,7 +3,6 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     line-height: 1.7;
     font-size: 16px;
@@ -28,10 +27,13 @@ header {
     justify-content: center;  /* 子要素を中央寄せ */
 }
 header .header-box {
-    /* borderは検証用 */
-    border: solid;
-    border-color: yellow;
     width: 40%;  /* 40％の箱が2つで20％が余白に割り当てられる */
+}
+header .header-box:nth-child(1) {
+    align-self: flex-start;  /* 自分自身の配置変更 */
+}
+header .header-box:nth-child(2) {
+    align-self: flex-end;  /* 自分自身の配置変更 */
 }
 header #logo-bg {  /* ロゴ背景色の作図 */
     width: 130px;  /* 正方形の作図 */
