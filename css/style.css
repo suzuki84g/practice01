@@ -136,4 +136,6 @@ table tbody tr th {
     margin-top: 10px;
     background-color: black;
     color: white;
+    padding: 16px 30px;  /* 上書き */
+    opacity: 0.75;
 }
