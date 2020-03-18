@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+body {
+    line-height: 1.7;
+    font-size: 16px;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+body section {
+    margin: 80px 0px;
+}
+body h1 {  /* fontサイズと行間を調整したい */
+    text-align: center;
+}
+body p,
+body h1 {
+    margin: 5px 0px;
+}
+
+/* header */
+header {
+    display: flex;  /* 子要素をflex化 */
+    justify-content: center;  /* 子要素を中央寄せ */
+}
+header .header-box {
+    width: 35%;  /* 40％の箱が2つで20％が余白に割り当てられる */
+    margin: 20px 0px;
+    /* border: solid 1px;  余白検証用 */
+}
+header .header-box:nth-child(1) {
+    align-self: flex-start;  /* 自分自身の配置変更 */
+}
+header .header-box:nth-child(2) {
+    align-self: flex-end;  /* 自分自身の配置変更 */
+}
+header #logo-bg {  /* ロゴ背景色の作図 */
+    width: 100px;  /* 正方形の作図 */
+    height: 100px;
+    background-color: #C0C0C0;
+    border-radius: 50%;  /* 円 */
+    margin-bottom: 30px;  /* 画像の下に余白を付ける */
+}
+header img {  /* imageを親要素ピッタリに表示させる */
+    width: 100%;
+    height: 100%;
+}
+header nav ul {
+    display: flex;  /* 配下のliをflex化 */
+    flex-wrap: nowrap; /* デフォルト設定、一行に収めるのでliは横並びになる */
+    list-style-type: none;  /* 行頭記号無し */
+    padding: 0px;  /* デフォルトの行頭記号余白を無効化 */
+    margin: 0px;  /* デフォルトの行頭記号余白を無効化 */
+}
+header nav ul li {
+    margin: 0px 10px 0px 0px;  /* 項目の右側に余白を割り当て */
+    font-size: small;  /* nav-ul-liを含む要素 */
+}
+header nav ul li:hover {
+    text-decoration: underline;  /* マウスオーバーでアンダーラインの表示 */
+}
+header nav ul li a[href] {
+    color: black;
+    text-decoration: none;
+}
+
+/* footer */
+footer {
+    background-color: #000;
+    color: #fffaf0;
+}
+footer p {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+/* main */
+.inner {
+    width: 70%;
+    margin: 0 auto;
+}
+table {
+    border: solid 2px #a9a9a9;  /* 枠線 */
+    border-radius: 5px / 5px;  /* 外枠を丸くする */
+    border-spacing: 6px;  /* セル同士の余白を発生させる */
+    background-color: #f0f0f0;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+}
+table thead,
+table tbody tr th {
+    font-weight: bold;
+}
+table thead {
+    font-size: large;
+}
+table thead [scope="row"] {
+    color: orange;
+}
+table tbody td,
+table tbody th {
+    border-bottom: dotted 2px #a9a9a9;  /* セルの下だけ線を引く */
+}
+table tbody tr th {
+    color: gray;
+}
