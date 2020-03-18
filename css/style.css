@@ -114,10 +114,15 @@ table tbody tr th {
     margin: 0px;
     line-height: 1;
 }
-.form .inner {}
-.form form {
+.form .inner {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.form form {
+    display: flex;
+    flex-direction: column;  /* flex-boxを縦重ね */
+    width: 80%;
 }
 .form form input,
 .form form textarea {
