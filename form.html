@@ -4,37 +4,48 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>サイト作成1</title>
+    <title>サイト作成1 - form</title>
     <!-- CDNによるcssのリセット https://github.com/necolas/normalize.css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap">
+    <!-- GoogleFontsの読み込み -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,700&display=swap&subset=japanese">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="content">
     <header>
-        <h1><a href="index.html"><img src="src/image/logo.png" alt="logo"></a></h1>
-        <nav>
-            <ul>
-                <li>nav-ul-li</li>
-                <li><a href="index.html#paragraph">paragraph</a></li>
-                <li><a href="index.html#table">table</a></li>
-                <li><a href="form.html#form">form</a></li>
-            </ul>
-        </nav>
+        <div class="header-box">
+            <div id="logo-bg">
+                <a href="index.html"><img src="src/image/logo.png" alt="logo"></a>
+            </div>
+        </div>
+        <div class="header-box">
+            <nav>
+                <ul>
+                    <li><a>nav-ul-li</a></li>
+                    <li><a href="index.html#paragraph">paragraph</a></li>
+                    <li><a href="index.html#table">table</a></li>
+                    <li><a href="form.html#form">form</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
+
+    <main class="form">
         <div class="inner">
             <h1>form</h1>
             <form action="hoge.php" method="post">
-                <p><input type="email" name="E-mail" value="E-mail"></p>
-                <p><textarea name="content" cols="30" rows="10">内容</textarea></p>
+                <input type="email" name="E-mail" placeholder="E-mail">
+                <textarea name="content" cols="30" rows="10"></textarea>
+                <input type="submit" value="送信">
             </form>
-            <p><input type="submit" name="submit" value="送信する"></p>
         </div>
     </main>
+
     <footer>
-        <p><small>&copy; 2020 GFTD</small></p>
+        <div class="copyright">
+            <p><small>&copy; 2020 GFTD</small></p>
+        </div>
     </footer>
 </body>
 
