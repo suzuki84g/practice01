@@ -11,9 +11,10 @@ body {
 body#content {  /* 骨子なのでid単位で明示 */
     display: flex;  /* header,main,footerの配置用 */
     flex-direction: column;
+    min-height: 100vh;  /* bodyの高さに対して、最小表示域を100%にする */
 }
-body#content:last-child {  /* 一番最後のbox＝footerを指定 */
-    align-self: flex-end;  /* flexの最後に固定したけど、そもそもHTMLが枠いっぱいにならず終わる */
+body main {
+    flex: 1;  /* 余白があれば埋める、headerとfooterはそれぞれ高さがpxで指定している */
 }
 body section {
     margin: 80px 0px;
