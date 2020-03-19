@@ -67,13 +67,14 @@ header nav ul li a[href] {
 
 /* footer */
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #000;
     color: #fffaf0;
 }
 footer p {
-    text-align: center;
     padding-top: 20px;
-    margin-bottom: 0px;
 }
 
 /* main */
